@@ -2,8 +2,8 @@
 using namespace std;
 
 
-//	0 ,für n = 0
-//	1, für n = 1
+//	0 ,fÃ¼r n = 0
+//	1, fÃ¼r n = 1
 //	f(n-1)+f(n-2), n > 1
 
 
@@ -11,15 +11,12 @@ using namespace std;
 
 
  int fib(int i){
-		if(i == 0){
-			return 0;
-		}
-		if (i == 1){
-			return 1;
+		if(i < 2){
+			return i;
 		}
 
 		return (fib(i-1)+ fib(i-2));
-}
+ }
 
 int main() {
 int max = 47;
