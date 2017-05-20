@@ -34,14 +34,14 @@ int main()
 
 	Vektor earth(0, 6371, 0);
 	Vektor person(0, personvektory / 1000, 0);
-	Vektor eye = earth.add(person);
-	Vektor sight = earth.sub(eye);
+	Vektor person1 = earth.add(person);
+	Vektor sight = earth.sub(person1);
 	int zeahler = 0;
 
 	while(sight.scalarProd(earth) >= 0.01 || sight.scalarProd(earth) <= -0.01)
 	{
 		earth.rotateAroundZ(0.00000001);
-		sight = earth.sub(eye);
+		sight = earth.sub(person1);
 		rad += 0.00000001;
 		zeahler ++;
 	}
