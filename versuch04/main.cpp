@@ -51,8 +51,8 @@ int main()
 	std::cout << std::fixed;
 
 	std::cout << "Sie können " << sightlength << " Km weit sehen." << std::endl;
-	std::cout << "Sie sind " << std::setprecision(3) << person.getY() * 1000 << " Meter hoch." << std::endl;
-	std::cout << "Der Winkel beträgt " << rad * 180 / PI << " Grad." << std::endl;
+	std::cout << "Sie sind " << std::setprecision(2) << person.getY() * 1000 << " Meter hoch." << std::endl;
+	std::cout << "Der Winkel beträgt " << std::setprecision(5) << rad * 180 / PI << " Grad." << std::endl;
 	std::cout << "Anzhal Steps: " << zeahler << std::endl;
 
    return 0;
