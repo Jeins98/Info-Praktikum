@@ -9,6 +9,11 @@
 #include "Vektor.h"
 #include "test.h"
 
+/**
+ * @brief test the addition function
+ * @return if right true; else false;
+ */
+
 bool test_add()
 {
 	std::cout << "Running test for 'vektor_add'..." << std::endl;
@@ -23,7 +28,8 @@ bool test_add()
 	y = v1result.getY();
 	z = v1result.getZ();
 
-if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ()){
+if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ())
+{
 	return true;
 }
 else
@@ -32,7 +38,10 @@ else
 }
 
 }
-
+/**
+ * @brief test the subtraction function
+ * @return if right true; else false;
+ */
 bool test_sub()
 {
 	std::cout << "Running test for 'vektor_sub'..." << std::endl;
@@ -47,7 +56,8 @@ bool test_sub()
 	y = v1result.getY();
 	z = v1result.getZ();
 
-if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ()){
+if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ())
+{
 	return true;
 }
 else
@@ -57,6 +67,10 @@ else
 
 }
 
+/**
+ * @brief test the rotatearoundZ function
+ * @return if right true; else false;
+ */
 bool test_rotate_z()
 {
 
@@ -71,7 +85,8 @@ bool test_rotate_z()
 		y = v1.getY();
 		z = v1.getZ();
 
-	if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ()){
+	if(x == vresult.getX() && y == vresult.getY() && z == vresult.getZ())
+	{
 		return true;
 	}
 	else
@@ -79,6 +94,9 @@ bool test_rotate_z()
 		return false;
 	}
 }
+/**
+ * @brief run the test
+ */
 
 bool run_full_test (void)
 {
